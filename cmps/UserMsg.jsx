@@ -24,7 +24,7 @@ export default class UserMsg extends React.Component {
                 this.setState({msg: null})
             }}>x</button>
             "{msg.book.title}"{msg.txt}
-            {msg.action ==='add' && <a href={`/#/book/${msg.book.id}/${msg.book.title}`}>Check it out</a>}
+            {msg.action ==='add' && <a href={`#/book/${msg.book.id}/${msg.book.title}`}>Check it out</a>}
         </section>
     }
 }
