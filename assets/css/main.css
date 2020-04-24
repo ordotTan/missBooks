@@ -1,0 +1,412 @@
+body {
+    background-color: beige;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    display: inline;
+}
+
+h2 {
+    margin: 0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+.catalog-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.book-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin: 10px;
+    text-align: center;
+    width:150px;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.book-preview:hover {
+    background-color:gray
+}
+
+.book-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.google-book-preview .book-img {
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    border: 1px solid black;
+
+}
+
+.book-preview .book-img {
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    border: 1px solid black;
+
+}
+
+.book-name {
+    text-align: center;
+    font-size: 1rem;
+    color:brown;
+    font-weight: 800;
+    text-transform: capitalize;
+
+}
+
+.book-name span {
+    font-size: 2rem;
+    color: indianred;
+}
+
+.book-price {
+    text-align: center;
+    font-size: large;
+    text-transform: capitalize;
+    color: black;
+
+}
+
+.filter-books {
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.filter-books input  {
+    margin: 5px;
+    padding: 3px;
+    font-size: 1rem;
+    width: 90px;
+} 
+
+.book-details {
+   display: flex;
+}
+
+.book-details img {
+   width: 200px;
+   border-radius: 10px;
+   border: 1px solid black;
+   align-self: center;
+
+ }
+
+
+ .book-details .sale-img {
+    width: 35px;
+    border: none;
+}
+
+.book-details button {
+    cursor: pointer;
+    background-color:darkorange;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 1rem;
+}
+
+.book-details button:hover {
+    opacity: 0.7;
+}
+
+.expensive-book {
+    color: red;
+
+}
+
+.cheap-book {
+    color: green;
+}
+
+
+button.book-desc-toggle {
+    background-color:seagreen;
+    font-size: 0.8rem;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+
+.clean-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.clean-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.clean-list li {
+    margin: 5px;
+    color: white;
+    background: lightskyblue;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+
+}
+
+.categories-list {
+    display: flex;
+    align-items: center;
+
+}
+
+.categories-list span {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+.form {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    background-color: burlywood;
+    border-radius: 10px;
+}
+
+.book-info {
+    width:500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-form-container {
+    margin-top: 10px;
+}
+
+textarea {
+    margin-bottom: 10px;
+}   
+
+.review-section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 10px;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    background-color: moccasin;
+    text-align: center;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+.review-list button {
+   font-size: 0.5rem;
+}
+
+footer {
+   background-color:burlywood;
+   text-align: center;
+   padding: 10px;
+
+}
+
+.nav-bar-section {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color:burlywood;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+nav {
+    align-self:center
+}
+
+nav a {
+    cursor: pointer;
+    background-color: orange;
+    border: 1px solid black;
+    padding:5px;
+    margin:5px;
+    border-radius: 10px;
+}
+
+.navbar-link:hover {
+   opacity: 0.7;
+}
+
+a.active {
+    color: black;
+}
+
+.home-section {
+   text-align: center;
+}
+
+.home-section img {
+    width: 500px;
+}
+
+.about-us-section {
+    text-align: center;
+
+}
+.about-us-section img {
+    width: 300px;
+}
+
+.user-msg {
+    background-color: orange;
+    position: absolute;
+    top:50px;
+    left: 250px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    color: black;
+    border:1px solid black;
+}
+
+.close-user-msg {
+   cursor: pointer; 
+   border-radius: 50%;
+   border: none;
+   background-color: green;
+   color: white;
+   margin-right: 10px;
+   text-align: center;
+}
+
+.close-user-msg:hover {
+    opacity: 0.7;
+}
+
+.user-msg a {
+    cursor: pointer;
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+}
+
+.user-msg a:hover {
+    opacity: 0.7;
+}
+
+
+.google-book-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin: 10px;
+    text-align: center;
+    width:200px;
+    height: 320px;
+
+}
+
+.google-book-preview button {
+    cursor: pointer;
+    background-color:darkorange;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 1rem;
+}
+
+.google-book-preview button:hover {
+    opacity: 0.7;
+}
+
+.back-btn {
+    cursor: pointer;
+    background-color:rgb(160, 134, 103);
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 1rem;
+    margin: auto;
+}
+
+.back-btn:hover {
+    opacity: 0.7;
+}
+
+.delete-btn {
+   margin-top: 10px;
+}
+
+
+.google-book-searchbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-book-searchbar input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.google-book-searchbar img {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
