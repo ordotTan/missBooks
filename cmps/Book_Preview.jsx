@@ -14,6 +14,8 @@ export default function Book_Preview(props) {
         case 'EUR':
             currSymbol='€'
             break;
+        default:
+            currSymbol='₪'
     }
     return (
         <Link to={`/book/${book.id}/${book.title}` }>
