@@ -1,3 +1,9 @@
+
+import AboutCompany from './AboutCompany.jsx'
+import Careers from './Careers.jsx'
+const { NavLink, Route, Switch } = ReactRouterDOM
+
+
 export default class About extends React.Component {
     timeInterval = 0
 
@@ -15,12 +21,16 @@ export default class About extends React.Component {
 
     render() {
         return (
-            <div className="about-us-section">
-                <h1>Who are we?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, commodi. Rerum itaque fugiat minima pariatur ipsa, inventore quod cum consequuntur, iste iure facilis voluptate optio voluptas unde earum exercitationem quis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, commodi. Rerum itaque fugiat minima pariatur ipsa, inventore quod cum consequuntur, iste iure facilis voluptate optio voluptas unde earum exercitationem quis.</p>
-                <img src="assets/img/missBooks.png"></img>
-            </div>
+            <section className="about-nav-bar">
+                <NavLink to='/about/company'>Company</NavLink>
+                <NavLink to='/about/careers'>Careers</NavLink>
+                <Switch>
+                    <Route component={Careers} path="/about/careers" />
+                    <Route component={AboutCompany} path="/about" />
+                </Switch>
+            </section>
+
+
         )
     }
 }

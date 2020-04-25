@@ -1,4 +1,4 @@
-const Router = ReactRouterDOM.HashRouter
+const Router = ReactRouterDOM.HashRouter 
 const { Route, Switch } = ReactRouterDOM
 const history = History.createBrowserHistory()
 
@@ -8,6 +8,7 @@ import AppHeader from './cmps/AppHeader.jsx'
 import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
 import BookAdd from './pages/BookAdd.jsx'
+
 
 
 export class App extends React.Component {

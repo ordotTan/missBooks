@@ -281,7 +281,8 @@ nav a {
 }
 
 a.active {
-    color: black;
+    background-color:rgb(111, 94, 64)
+
 }
 
 .home-section {
@@ -409,4 +410,46 @@ a.active {
     margin-bottom: 30px;
     border-radius: 10px;
     width: 300px;
+}
+
+.careers-section {
+   display: flex;
+}
+
+.careers-section img {
+    width: 300px;
+    margin: auto;
+}
+
+.about-company-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-company-section img {
+    width: 400px;
+}
+
+.about-nav-bar {
+    margin-top: 20px;
+}
+
+.about-nav-bar a {
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-left: 7px;
+}
+.about-nav-bar a:hover {
+    opacity: 0.7;
+}
+
+.about-nav-bar a.active {
+    background-color:rgb(111, 94, 64)
 }
