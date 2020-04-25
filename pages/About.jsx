@@ -8,14 +8,14 @@ export default class About extends React.Component {
     timeInterval = 0
 
     componentDidMount() {
-        console.log('Landed at "About" page')
+       // console.log('Landed at "About" page') //This is just a demo of using DidMount and WillUnmount functions.. 
         this.timeInterval = setInterval(() => {
-            console.log('still on "About" page... ')
+          //  console.log('still on "About" page... ')
         }, 3000)
     }
 
     componentWillUnmount() {
-        console.log('Left "About" page')
+     //   console.log('Left "About" page')
         clearInterval(this.timeInterval)
     }
 

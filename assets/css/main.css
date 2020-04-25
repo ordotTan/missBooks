@@ -418,6 +418,8 @@ a.active {
 
 .careers-section {
    display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .careers-section img {

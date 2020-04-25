@@ -37,8 +37,9 @@ export default class BookDetails extends React.Component {
     }
 
     onToggleDesc = () => {
-        // this.setState({ isLongTxtShown: !isLongTxtShown }) // Need to use prev state in this case
-        this.setState(prevState => ({ isLongTxtShown: !prevState.isLongTxtShown }))
+        // this.setState({ isLongTxtShown: !isLongTxtShown }) // Need to use prev state in this case..
+       // this.setState(prevState => ({ isLongTxtShown: !prevState.isLongTxtShown }))
+        this.setState(({ isLongTxtShown }) => ({ isLongTxtShown: !isLongTxtShown })) //shorter format
 
     }
 
