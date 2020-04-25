@@ -20,7 +20,7 @@ export default {
 
 function getBooksData(inputSearchWord) {
 
-  //For dev purposes
+  //For dev purposes - work with static results from the books API
   // var booksResults = storageService.load(BOOKS_RESULTS_KEY)
   // if (booksResults) {
   //   console.log('from storage')
@@ -142,7 +142,7 @@ function getNextPrevBooks(bookId) {
       prevId: gBooks[gBooks.length - 2].id
     })
 
-  else // All other locations
+  else // All other positions
     return Promise.resolve({
       nextId: gBooks[bookIdx + 1].id,
       prevId: gBooks[bookIdx - 1].id
@@ -593,6 +593,7 @@ const gDefaultBooks =
 //   }
 // ]
 
+//Creating some default books:
 _createBooks()
 
 function _createBooks() {

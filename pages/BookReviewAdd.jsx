@@ -55,14 +55,14 @@ export default class BookReviewAdd extends React.Component {
     }
 
     render() {
-        const { review } = this.state
+        const { rate,name,readAt,comment } = this.state.review
         return (<div>
             <h2>Submit your review</h2>
             <form className="form" onSubmit={this.onAddReview}>
                 <label htmlFor="">Full Name: </label>
-                <input type="text" name="name" value={review.name} onChange={this.handleInput} ref={this.formNameInput}></input>
+                <input type="text" name="name" value={name} onChange={this.handleInput} ref={this.formNameInput}></input>
                 <label htmlFor="">Rating: </label>
-                <select name="rate" value={review.rate} onChange={this.handleInput}>
+                <select name="rate" value={rate} onChange={this.handleInput}>
                     <option value="">Book Rate</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -71,9 +71,9 @@ export default class BookReviewAdd extends React.Component {
                     <option value="5">5</option>
                 </select>
                 <label htmlFor="">Read at: </label>
-                <input type="date" name="readAt" value={review.readAt} onChange={this.handleInput}></input>
+                <input type="date" name="readAt" value={readAt} onChange={this.handleInput}></input>
                 <label htmlFor="">Comments: </label>
-                <textarea name="comment" placeholder="What did you like or not about it?" rows="4" cols="50" value={review.comment} onChange={this.handleInput}></textarea>
+                <textarea name="comment" placeholder="What did you like or not about it?" rows="4" cols="50" value={comment} onChange={this.handleInput}></textarea>
                 <button>Submit</button>
             </form>
         </div>

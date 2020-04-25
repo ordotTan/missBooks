@@ -10,7 +10,13 @@ export default class BookFilter extends React.Component {
     handleChange = ({ target }) => { // The onChnage function gets be default "event".. and we destructe from it "target"
         const field = target.name
         const value = (target.type === 'number') ? parseInt(target.value) : target.value
-        this.setState(prevState => ({ filter: { ...prevState.filter, [field]: value } }), () => { // this will run the onSetFilter for every input change
+        this.setState(prevState => ( 
+            // console.log(prevState.filter),
+            // console.log({...prevState.filter}),
+            // console.log(field),
+            // console.log([field]),
+            // console.log(value),
+            { filter: { ...prevState.filter, [field]: value } }), () => { // this will run the onSetFilter for every input change
             this.props.onSetFilter(this.state.filter)
         })
     }

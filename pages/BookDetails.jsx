@@ -37,12 +37,10 @@ export default class BookDetails extends React.Component {
     }
 
     onToggleDesc = () => {
-        // this.setState({ isLongTxtShown: !isLongTxtShown })
+        // this.setState({ isLongTxtShown: !isLongTxtShown }) // Need to use prev state in this case
         this.setState(prevState => ({ isLongTxtShown: !prevState.isLongTxtShown }))
 
     }
-
-    //this.setState(prevState=>({isLongTxtShown:!prevState.isLongTxtShown}))
 
     getCurrencySign = (currencyCode) => {
         let currSymbol
@@ -86,7 +84,7 @@ export default class BookDetails extends React.Component {
             })
     }
 
-    removeBook = () => {
+    onRemoveBook = () => {
 
         Swal.fire({
             title: 'Are you sure?',
@@ -105,7 +103,7 @@ export default class BookDetails extends React.Component {
                     .catch((err) => {
                         console.log('Error removing book:', err);
                     })
-                // Swal.fire(
+                // Swal.fire( // if we want to use swal modal msg
                 //     'Cleared!',
                 //     'Book removed',
                 //     'success'
@@ -147,10 +145,10 @@ export default class BookDetails extends React.Component {
                         {listPrice.isOnSale && <img className="sale-img" src="assets/img/onSale.png"></img>}
                     </p>
                     {book.categories && <BookCategoriesList categories={categories} />}
-                    {<div>
+                    <div>
                         <Link to={`/book/${this.prevNext.prevId}/${book.title}`}>Previous Book</Link> |
                         <Link to={`/book/${this.prevNext.nextId}/${book.title}`}> Next Book</Link>
-                    </div>}
+                    </div>
                 </div>
                 <div className="review-section">
                     <div className="review-form-container">
@@ -161,7 +159,7 @@ export default class BookDetails extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <button className="delete-btn" onClick={this.removeBook}>Delete Book</button>
+                    <button className="delete-btn" onClick={this.onRemoveBook}>Delete Book</button>
                 </div>
 
             </section>
