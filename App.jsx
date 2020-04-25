@@ -9,8 +9,6 @@ import About from './pages/About.jsx'
 import Home from './pages/Home.jsx'
 import BookAdd from './pages/BookAdd.jsx'
 
-
-
 export class App extends React.Component {
 
     render() {

@@ -114,20 +114,6 @@ export default class BookDetails extends React.Component {
         })
     }
 
-
-
-    //     bookService.remove(this.state.book.id)
-    //         .then(()=>{
-    //             this.props.history.push('/book')  
-    //             console.log()
-    //             eventBusService.emit('user-msg', {txt: ' was removed',book:this.state.book,action:'remove'})
-    //         })
-    //         .catch((err)=>{
-    //             console.log('Error removing book:', err);
-    //         })
-    // }
-
-
     render() {
         const { book } = this.state
         const Loading = <p>Book not found, go back...</p>
@@ -142,7 +128,6 @@ export default class BookDetails extends React.Component {
                 pageCount,
                 categories,
                 thumbnail,
-                language,
                 listPrice } = this.state.book
             var bookPriceClass
             if (listPrice.amount > 150) bookPriceClass = 'expensive-book'
