@@ -25,13 +25,11 @@ a:hover {
     opacity: 0.7;
 }
 
-
 .catalog-header {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-
 
 .book-preview {
     display: flex;
@@ -40,18 +38,18 @@ a:hover {
     align-items: center;
     cursor: pointer;
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #f0b4478c;
     border-radius: 10px;
     border: 1px black solid;
     margin: 10px;
     text-align: center;
-    width:150px;
+    width: 150px;
     height: 250px;
     transition: 0.5s;
 }
 
 .book-preview:hover {
-    background-color:gray
+    background-color: gray
 }
 
 .book-list {
@@ -65,7 +63,6 @@ a:hover {
     border-radius: 10px;
     width: 100px;
     border: 1px solid black;
-
 }
 
 .book-preview .book-img {
@@ -73,16 +70,14 @@ a:hover {
     border-radius: 10px;
     width: 100px;
     border: 1px solid black;
-
 }
 
 .book-name {
     text-align: center;
     font-size: 1rem;
-    color:brown;
+    color: brown;
     font-weight: 800;
     text-transform: capitalize;
-
 }
 
 .book-name span {
@@ -95,13 +90,13 @@ a:hover {
     font-size: large;
     text-transform: capitalize;
     color: black;
-
 }
 
 .filter-books {
+    color: white;
     margin-top: 10px;
     border: 1px solid black;
-    background-color: cadetblue;
+    background-color: #e49118;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,34 +105,32 @@ a:hover {
     margin-left: 20px;
 }
 
-.filter-books input  {
+.filter-books input {
     margin: 5px;
     padding: 3px;
     font-size: 1rem;
     width: 90px;
-} 
+}
 
 .book-details {
-   display: flex;
+    display: flex;
 }
 
 .book-details img {
-   width: 200px;
-   border-radius: 10px;
-   border: 1px solid black;
-   align-self: center;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    align-self: center;
+}
 
- }
-
-
- .book-details .sale-img {
+.book-details .sale-img {
     width: 35px;
     border: none;
 }
 
 .book-details button {
     cursor: pointer;
-    background-color:darkorange;
+    background-color: darkorange;
     padding: 5px;
     border-radius: 10px;
     border: 1px solid black;
@@ -151,21 +144,18 @@ a:hover {
 
 .expensive-book {
     color: red;
-
 }
 
 .cheap-book {
     color: green;
 }
 
-
 button.book-desc-toggle {
-    background-color:seagreen;
+    background-color: seagreen;
     font-size: 0.8rem;
     padding-left: 4px;
     padding-right: 4px;
 }
-
 
 .clean-list {
     display: flex;
@@ -174,7 +164,7 @@ button.book-desc-toggle {
     padding: 0;
 }
 
-.clean-list a{
+.clean-list a {
     text-decoration: none;
     color: white;
 }
@@ -186,20 +176,17 @@ button.book-desc-toggle {
     border-radius: 5px;
     padding: 5px;
     font-size: 1rem;
-
 }
 
 .categories-list {
     display: flex;
     align-items: center;
-
 }
 
 .categories-list span {
     font-size: 1.2rem;
     font-weight: 800;
 }
-
 
 .form {
     width: 200px;
@@ -212,7 +199,7 @@ button.book-desc-toggle {
 }
 
 .book-info {
-    width:500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -223,7 +210,7 @@ button.book-desc-toggle {
 
 textarea {
     margin-bottom: 10px;
-}   
+}
 
 .review-section {
     display: flex;
@@ -248,49 +235,50 @@ td {
 }
 
 .review-list button {
-   font-size: 0.5rem;
+    font-size: 0.5rem;
 }
 
 footer {
-   background-color:burlywood;
-   text-align: center;
-   padding: 10px;
-
+    background-color: burlywood;
+    text-align: center;
+    padding: 10px;
 }
 
 .nav-bar-section {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background-color:burlywood;
+    background-color: burlywood;
     padding-left: 10px;
     padding-right: 10px
 }
 
 nav {
-    align-self:center
+    align-self: center
 }
 
 nav a {
     cursor: pointer;
     background-color: orange;
     border: 1px solid black;
-    padding:5px;
-    margin:5px;
+    padding: 5px;
+    margin: 5px;
     border-radius: 10px;
 }
 
 .navbar-link:hover {
-   opacity: 0.7;
+    opacity: 0.7;
 }
 
 a.active {
-    background-color:rgb(111, 94, 64)
-
+    background-color: rgb(111, 94, 64)
 }
 
 .home-section {
-   text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
 .home-section img {
@@ -299,8 +287,8 @@ a.active {
 
 .about-us-section {
     text-align: center;
-
 }
+
 .about-us-section img {
     width: 300px;
 }
@@ -308,24 +296,24 @@ a.active {
 .user-msg {
     background-color: orange;
     position: absolute;
-    top:50px;
+    top: 50px;
     left: 250px;
     font-size: 1em;
     padding: 10px 20px;
     border-radius: 10px;
     margin: auto;
     color: black;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 .close-user-msg {
-   cursor: pointer; 
-   border-radius: 50%;
-   border: none;
-   background-color: green;
-   color: white;
-   margin-right: 10px;
-   text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: green;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
 }
 
 .close-user-msg:hover {
@@ -343,26 +331,24 @@ a.active {
     opacity: 0.7;
 }
 
-
 .google-book-preview {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #f0b4478c;
     border-radius: 10px;
     border: 1px black solid;
     margin: 10px;
     text-align: center;
-    width:200px;
+    width: 200px;
     height: 320px;
-
 }
 
 .google-book-preview button {
     cursor: pointer;
-    background-color:darkorange;
+    background-color: darkorange;
     padding: 5px;
     border-radius: 10px;
     border: 1px solid black;
@@ -376,7 +362,7 @@ a.active {
 
 .back-btn {
     cursor: pointer;
-    background-color:rgb(160, 134, 103);
+    background-color: rgb(160, 134, 103);
     padding: 5px;
     border-radius: 10px;
     border: 1px solid black;
@@ -390,9 +376,8 @@ a.active {
 }
 
 .delete-btn {
-   margin-top: 10px;
+    margin-top: 10px;
 }
-
 
 .google-book-searchbar {
     display: flex;
@@ -417,9 +402,9 @@ a.active {
 }
 
 .careers-section {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .careers-section img {
@@ -452,10 +437,11 @@ a.active {
     border: 1px solid black;
     margin-left: 7px;
 }
+
 .about-nav-bar a:hover {
     opacity: 0.7;
 }
 
 .about-nav-bar a.active {
-    background-color:rgb(111, 94, 64)
+    background-color: rgb(111, 94, 64)
 }

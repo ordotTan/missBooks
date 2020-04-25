@@ -3,7 +3,8 @@ export default class Home extends React.Component {
     render() {
         return ( 
         <section className="home-section">
-            <img src="assets/img/books.jpg"></img>
+            <h1>Welcom to "Miss-Books"!</h1>
+            <img src="assets/img/books.png"></img>
         </section>
             )
     }
